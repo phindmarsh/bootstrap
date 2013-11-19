@@ -38,6 +38,7 @@ angular.module('ui.bootstrap.collapse', ['ui.bootstrap.transition'])
 
         function collapse() {
           if (initialAnimSkip) {
+            initialAnimSkip = false;
             element.removeClass('collapsing');
             element.addClass('collapse');
             element.css({height: 0});
